@@ -29,7 +29,6 @@ function validationCheck(){
         return false;   
 
     }else{
-        // AJAX request to PHP
         fetch("login.php", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
