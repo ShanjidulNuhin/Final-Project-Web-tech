@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Frame</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navBar">
+            <a href="homePage.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="background"></div>
+
+    <div class="container">
+        <div class="content">
+            <h2 class="icon"><img src="data:image/png;base64,
+            iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAADlUlEQVR
+            4AYxVi3XbMAw8ZJF6lGSS1pNYmSTtJO0mdSdB7w4gRdVKEzwRn8OBICn
+            KfsKpBOIUb/C/yebYnBANBZbGRlCSyHKoVxy1oE46Y4VHMd7Ex+zaOGtSF1ih
+            gMYhicOCUpAVitplOJVOmp9rYyyTOttAN+u6fc6sZgaakw5K2V+LDKCK4tg
+            YEue7wCaLmzMpx8PQ6plv4H3VRU/n3BzNbkD8TvgwaD6wvhoh3m8A31h2gWR
+            tYv9w1FHNRORg9RuBbRYT+9yTLMOF6g3AVw5OYX1QTznDxO7jAq24gF/0t49G
+            ABubbaBl2Z1Wz0Zcc8mvwaSc5XNSOMdXFoATgfLC8ToG8f
+            bj1X6AcXDQJgc8XrgLNidj7JoTrM97jTcvLDGK8ShmzGPsaNBYB45kf/BdYxe
+            vJfpWd4ASH40h4Ltmbh+StcHu7544PX4ArrzQXDDE1HG5OnAuwAvhAoU6Qjit
+            iDPYPKjJXzNcNO6d4ZwoaaCOugNnEpt2iZIbzY1pWyBvimtE4QFijdtH4YBweN
+            EJHXft2kD0UTvAhQ1+oqUgcBHQ+7YFoFvafpZNlGWOXeynfI+oZoDsW5SFpHYsj7
+            ePBc9np8mCYlCTQ13P6htZiQawTvdM/jMs4x07aMVsexhVK4QpJ10eiMlDGAXmfxn
+            RuuOByepH48qqjQE/C2o/LrYHJtvZjdNWwlR7pdP1x1Utv9WzgFzwU4BupW61LEoSO
+            6u91aRYKY6asjZUq+ZKHMay46xE2GjHdqBpQCl82WdWJpl7fP4UlOLcpSoeOrD8VqMk
+            bW7Uuon8DJKDUXJwhu6vYFlE/x87aV/1ukia420Qne7K2vGOGKZSM/216R9GxYT05Jh
+            DwTKSS2KYHMVQzU/UX+pzJVEZlFRjF6CPpxLv6X2NgVhINUUBxq0abVPZ0tW4fL3Xe7
+            mf0b17Nzjy3cdqxU3UpTVYt9oY9LvKm4hdAlqIFtQj2uLcRuEB2qrFLnmlr/lo0JfLq/
+            OlmAlnE/ocXgD0yBdS228s204OilO1LJ2PNjaDOupQnLCRexjn6IFyFpyUpXjG4/Ancb
+            h1mJLvLGgSdid3l5P5srpPwbVjcx5/q/XudJQbC67seHznNQGIA6Wmwb8S0Gu6ss+Geg13
+            +hhlddSQsJWMLgbwStJ3rpqI3z3t8jA5v0r7XdvGTONQcy1eG4LFePRRrwX4V8xssIltGqRp
+            jk2MTRE/PjHDxF8AAAD//4ejkEcAAAAGSURBVAMAcmgNU3Zc5+IAAAAASUVORK5CYII=" />Cars</h2>
+
+            <div class="text">
+                <h2>Welcome!<br><span> to Our project</span></h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores tempore magnam veritatis modi
+                    fuga sunt libero id, qui fugiat perspiciatis. Expedita architecto facere minus, magni ipsam quisquam
+                    eaque ullam sequi?</p>
+
+            </div>
+
+        </div>
+
+        <div class="form">
+            <div class="formContainer">
+                <form action="" onsubmit="return validationCheck()">
+                     <script src="script.js"></script>
+
+                    <h2>Login</h2>
+
+                    <div class="uName">
+                        <input type="text" id="username" >
+                        <label for="username">Username</label>
+                    </div>
+
+                    <div class="pass">
+                        <input type="password" id="password" >
+                        <label for="password">Password</label>
+                    </div>
+                    <br>
+                    <div class="remember">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember Me</label>
+
+                        <a href="#" class="forgot">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="btn" id="lbtn" onclick="validationCheck()">Login</button><br>
+                    <button type="button" class="btn" id="gbtn"
+                        onclick="window.location.href='login_with_google.html'"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAADfElEQVR4AYRWgXHbMAx8ZpEmm7iTNJ7E8iROJ2k6SdxJ2P8HJIKWdeGRAPh4AAQjyXnBwWjCLWSsawesjqKTk2o4Ekh1WLiPiLAyIDZF7vBdZCGvZkMU3gXvAMD5LDANQ0/4Eyk2Zpnfs7A34cTwZrHEZ/XK7aupFpnANj1lGrLIdGlHx4UYnSHqQyOZgIpdADO+gPbFcp072vgD4MYlDhUnnZSwSuFMtpEdi/Gw0k+0K5kSq8BCIGcP3UB/OwF4ZxXxLthGKw1soI3ouNkuYgOUUAWli19mi6RZXwgXDwEdTjEAT1Ld1Y7CFSFdAVQqpg5oPp8Oa/LZkuFF6Bqn8haTDY12eNU6+VHRO4APHk6dndkUbQhDjjOP8UE8t1QEKMtcn+oCpakHJc1JLezmjciZ68qlorJ/0l7YmWxh3JbJoLKzGVdtcxO6Yq0NSEPJVSy3qZy0qeMru9wXFc0dN55LG62Gl4bd+LVDgAXAJ54NJ03Hk2Tpoeo8F5Vnx0HHU4boxgEpqtt2j256+g+Uqel7Mbci/lAYTQo+q3vy8AmDV+vEOd1U6FZs4ELeNOOqRY0z62k2oRT7a2AnkuHY6jzCAVPTHR07zjCifhwXMX5YOcAiMxhNUWPTTk+qraHcIzrOfAb3cSdDFmak2AGJP1V6TsKRYdFxbui5s+P7Q0vltINILqnQKzZW936R72H9e9hnxxXtYGHAl2ABFb4FgGnwGHrFHpf4yYsE3IhDNWZ0nPuk+SPBpFvjxE98Mt6TdqwaTtCvFEVMZ9FHxc0YYzLp6T02DdDptLAO4uriAjQuYO0+c0CDtny77zvx3/Jvi8nABKVw4xbrOLfVWlH/7nb9/b7YvQrcOnCh+0aq/ilY0Glxjlh8EpqaoJuTX65B6mscHbgzQA8N7c7cVhSe6n690oVB70SFUWlur6KuN3MIn1f5G+cRUpGmk75RMzflwBEn2RTm0bW9k6NfKtmgjccR77FRB9gq4k5bxT+m6klNRUqdLX46O3TwqFmJDR77jvckFT8zAw/QF0Y5IXWZTZwlOPBbUZxAwxg9zHi47OiTPyGz0lZyJdXfTRAP4hDaXfaVt0JOp3LYEH2YqxWFc1f91U63FatYU7AI5dEsxGeUqfDgDmsL+gayewisbdcG7HbClp/M9KbCFkULvk3Mwxm218Y+xw5h7Fh0/AcAAP//9sN91AAAAAZJREFUAwDig9lFfyuMTQAAAABJRU5ErkJggg=="
+                            class="gk" />Sign in with Google</button><br>
+                    <button type="button" class="btn" id="ebtn" onclick="window.location.href='enter_Email.html'"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAADGklEQVR4AZxWgXEbMQyjskjTTZJJGk/SdpJkk3iTtpOoAAhJlP/TnMuTSAoESUn/7/NDC4gU7BwVaNEmHpsfU1rB20RjoBUKSouHHhCpGLSIMACP/r4CWAvJ7yXjwEYCh4h0MHs8QM+xUirJ4QotIvdlwjKVKl/8ngcTELFddWOuVKd3x1TS5K/sVm7Ce1Sw7VctLD6Q/wrWpLq5m6tWy8oVcL+qLVa2CztYnrGQJxBfMd8x6cPcP9yCiawx6j0SGHefzzgRBtjwBUsm0P8On3jkmxEp2mO6G27IhrmsMer9Ap614OTnBAfjG+bt+AGAO34cO8V6H+V4DrA4GzLXEI12ywNxsb/VQqoSN0jmbrnz+EQGl/aM+mWAeeK662yW8YpH8OS8Pp4o41M33jhjPOlEd6cWa1Ferkip8URSNxle32v0QPPGZgGB39mQMSxj4HEqjejZ50R8TJG8WBviNeLq+wsg+/EE38TAvqabm1AdqRk8ntg5otVqxovh1b9nZaNKkjLgPqrTN+qHjftMdSGbCQ9nEd0lsoH4UjFkUVvkd6y4VGRWVLlqsbK0pHIG3ZwCRLzmffeTcknNE3cuepI6/Ug/KP0CfQHwGzaHGviA8hvCCGXuM7yfmBoJyU2OXLxcNXDuN1LfcAIWzOYHYkc4eDPkXGs4iiy8RZ44bkXNDJregk2/IvIWVQBgSUxN4R9HcvYTG7shu1lFDcFcAHNyI7xvNuQacBm1MJICbWUiJX+55JtpI0jKgI2hcUI25RUL3lTtosAO5FvtgGo7Lt94NcXnic+bipRq1VkeI3niitl3f3LKdNCIVlKBi4wTqX99asW2vVx/FJKKIq4spGcDQ52YFB81F7fTQcNO0yrfasUbn9vJ1SkocqCtVlKxSdtWY7GhrO/vG9+xKI7DPKM2DHTMyWcZn0ndCwrwADAdc9a5VM72cikgFWLHQRwUzppyDmqxzLFZxLb/vY0iKzmOm3Ahm5giQGpCy6n4uGpHa0iQgX9u4kCsbPs2olrly+WFjJpJabkrfx4qpN/n27DWK9ueTN9u7i8AAAD//+qfn0wAAAAGSURBVAMAV4S1SOcxfHYAAAAASUVORK5CYII="
+                            class="mail" />Sign in with Email</button><br>
+                    <button type="button" class="btn" id="rst">Reset</button>
+
+                    <div>
+                        <p>Don't have an account? <a href="#" class="signup">Sign Up</a></p>
+                    </div>
+                    <p id="eName"></p>
+                    <p id="ePass"></p>
+                </form>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
