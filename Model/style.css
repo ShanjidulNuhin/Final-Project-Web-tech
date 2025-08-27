@@ -361,7 +361,7 @@
     font-size: 12px;
 }
 
-#homeNavBar{
+.homeNavBar{
     position: fixed;
     top: 0;
     left: 0;
@@ -369,4 +369,126 @@
     color: black;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+}
+.homeNavBar a {
+    color: black;
+    text-decoration: none;
+    padding: 12px 16px;
+    transition: 0.3s;
+}
+
+.homeNavBar a:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+.inventory{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 10px;
+    display: flex;
+    align-items: center;
+    gap:20px;
+    z-index: 100;
+    background-color: rgb(2, 43, 43);
+}
+.iNav a{
+    position: relative;
+    font-size: 16px;
+    color:beige;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 30px;
+}
+.iNav a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background-color: beige;
+    border-radius: 5px;
+    transform: translateY(10px);
+    transition: 0.5s;
+    opacity: 0;
+}
+.iNav a:hover::after{
+    transform: translateY(0);
+    opacity: 1;
+}
+#search{
+    margin-top:0px ;
+    height: 25px;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: rgb(2, 43, 43);
+    color: white;
+}
+.customer{
+     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 10px;
+    display: flex;
+    align-items: center;
+    gap:20px;
+    z-index: 100;
+    background-color: rgb(2, 43, 43);
+}
+.customerNav a{
+     position: relative;
+    font-size: 16px;
+    color:beige;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 30px;
+}
+.customerNav a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background-color: beige;
+    border-radius: 5px;
+    transform: translateY(10px);
+    transition: 0.5s;
+    opacity: 0;
+}
+.customerNav a:hover::after{
+    transform: translateY(0);
+    opacity: 1;
+}
+#cSrscBtn{
+    margin-top:0px ;
+    height: 25px;
+    background-color: rgb(2, 43, 43);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#cSrscBtn:hover{
+    background-color: rgb(16, 53, 239);
+}
+
+.cfooter{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: rgb(2, 43, 43);
+    color: white;
 }
